@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx9-tqg144-2 mux_op_sel.ngc mux_op_sel.ngd  
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx9-tqg144-2 mux_op_sel.ngc mux_op_sel.ngd  
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim mux_op_sel.ngc mux_op_sel_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim mux_op_sel.ngd mux_op_sel_translate.v 
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim mux_op_sel.ngc mux_op_sel_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx9-tqg144-2 mux_op_sel.ngc mux_op_sel.ngd  
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.xst" -ofn "F:/Xilinx/14.7/ISE_DS/mux_16_1/mux_op_sel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx9-tqg144-2 mux_op_sel.ngc mux_op_sel.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mux_op_sel_map.ncd mux_op_sel.ngd mux_op_sel.pcf 
+par -w -intstyle ise -ol high -mt off mux_op_sel_map.ncd mux_op_sel.ncd mux_op_sel.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mux_op_sel.twx mux_op_sel.ncd -o mux_op_sel.twr mux_op_sel.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f mux_op_sel.ut mux_op_sel.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim mux_op_sel.ngc mux_op_sel_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim mux_op_sel.ngd mux_op_sel_translate.v 

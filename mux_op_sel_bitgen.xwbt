@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Xilinx\14.7\ISE_DS\mux_16_1\mux_op_sel.ncd
+OUTFILE=F:\Xilinx\14.7\ISE_DS\mux_16_1\mux_op_sel.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=F:\Xilinx\14.7\ISE_DS\mux_16_1
+LICENSE=WebPack
+USER_INFO=212015362_0_0_143
